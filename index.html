@@ -1,14 +1,18 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Contact Me - Leen</title>
+<title>Leen - Home</title>
 <style>
 body {
   background-color: #f3eefb;
   font-family: Arial;
+  text-align: center;
 }
 h1 {
   color: #6a2fb5;
+}
+p {
+  color: #4a4a4a;
 }
 a {
   color: #6a2fb5;
@@ -17,45 +21,16 @@ a {
   text-decoration: none;
 }
 </style>
-<script>
-function checkForm() {
-  var name = document.getElementById("name").value;
-  var email = document.getElementById("email").value;
-  var country = document.getElementById("country").value;
-  var comment = document.getElementById("comment").value;
-
-  if (name == "" || email == "" || country == "" || comment == "") {
-    alert("Please fill in all fields.");
-    return false;
-  }
-  alert("Thank you! Your form was sent.");
-  return false;
-}
-</script>
 </head>
 <body>
 
 <a href="index.html">Home</a>
 <a href="contact.html">Contact Me</a>
 
-<h1>Contact Me</h1>
+<h1>Welcome to Leen's Website</h1>
+<p>Hello! My name is Leen.</p>
+<p>This is my personal website.</p>
 <p>My Email: lsalnajdawi24@cit.just.edu.jo</p>
-
-<form onsubmit="return checkForm()">
-  Full Name:<br>
-  <input type="text" id="name"><br><br>
-
-  Email Address:<br>
-  <input type="text" id="email"><br><br>
-
-  Country:<br>
-  <input type="text" id="country"><br><br>
-
-  Comments:<br>
-  <textarea id="comment"></textarea><br><br>
-
-  <input type="submit" value="Submit">
-</form>
 
 </body>
 </html>
